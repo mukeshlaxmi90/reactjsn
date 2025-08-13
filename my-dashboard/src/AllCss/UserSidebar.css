@@ -1,0 +1,50 @@
+.sidebar {
+  background: #f8f9fa;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  transition: width 0.3s;
+  min-width: 220px;
+  max-width: 400px;
+}
+
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.menu-item {
+   display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  gap: 8px;  
+  
+}
+
+.label {
+  
+  font-size: 14px;
+  margin-left: 4px;
+ 
+
+}
+
+.submenu-list {
+  list-style: none;
+  padding-left: 35px;
+  margin-top: 5px;
+}
+
+.submenu-item {
+  padding: 6px 0;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+.menu-item svg {
+  margin-top: 1px; /* Optional: aligns icon with text */
+}
