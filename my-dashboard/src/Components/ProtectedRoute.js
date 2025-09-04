@@ -15,7 +15,6 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
     localStorage.removeItem("role");
     navigate("/", { replace: true });
   };
-
   const resetTimer = () => {
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = setTimeout(logout, SESSION_MS);
@@ -23,12 +22,10 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
 
   useEffect(() => {
     if (!isAuthenticated) return;
-
     resetTimer();
     ACTIVITY_EVENTS.forEach(event =>
       window.addEventListener(event, resetTimer)
     );
-
     window.history.pushState(null, null, window.location.pathname);
     const handleBackButton = () => {
       logout();
