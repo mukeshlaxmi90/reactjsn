@@ -2,7 +2,7 @@
   "name": "my-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mukeshlaxmi90.github.io/reactjsn",
+  "homepage": "https://mukeshlaxmi90.github.io/retjsn",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
